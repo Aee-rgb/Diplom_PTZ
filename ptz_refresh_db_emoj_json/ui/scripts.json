@@ -1,0 +1,138 @@
+{
+  "pan_patrol": {
+    "name": "Патруль: влево-вправо",
+    "description": "Автоматический поворот камеры по горизонтали",
+    "params": [
+      {
+        "name": "pan_range",
+        "label": "Диапазон (°)",
+        "type": "int",
+        "default": 30,
+        "min": 5,
+        "max": 90
+      },
+      {
+        "name": "step_delay",
+        "label": "Задержка (сек)",
+        "type": "float",
+        "default": 0.3,
+        "min": 0.1,
+        "max": 2.0
+      },
+      {
+        "name": "cycles",
+        "label": "Циклы (0=∞)",
+        "type": "int",
+        "default": 0,
+        "min": 0,
+        "max": 100
+      }
+    ],
+    "custom": false
+  },
+  "tilt_patrol": {
+    "name": "Патруль: вверх-вниз",
+    "description": "Автоматический наклон камеры по вертикали",
+    "params": [
+      {
+        "name": "tilt_range",
+        "label": "Диапазон (°)",
+        "type": "int",
+        "default": 20,
+        "min": 5,
+        "max": 60
+      },
+      {
+        "name": "step_delay",
+        "label": "Задержка (сек)",
+        "type": "float",
+        "default": 0.3,
+        "min": 0.1,
+        "max": 2.0
+      },
+      {
+        "name": "cycles",
+        "label": "Циклы (0=∞)",
+        "type": "int",
+        "default": 0,
+        "min": 0,
+        "max": 100
+      }
+    ],
+    "custom": false
+  },
+  "zoom_cycle": {
+    "name": "Зум-цикл",
+    "description": "Плавное увеличение и уменьшение зума",
+    "params": [
+      {
+        "name": "zoom_steps",
+        "label": "Шагов зума",
+        "type": "int",
+        "default": 10,
+        "min": 3,
+        "max": 50
+      },
+      {
+        "name": "step_delay",
+        "label": "Задержка (сек)",
+        "type": "float",
+        "default": 0.2,
+        "min": 0.05,
+        "max": 1.0
+      }
+    ],
+    "custom": false
+  },
+  "preset_tour": {
+    "name": "Тур по позициям",
+    "description": "Переход между заданными позициями",
+    "params": [
+      {
+        "name": "positions",
+        "label": "Позиции (pan,tilt,zoom;...)",
+        "type": "text",
+        "default": "0,0,0;30,10,200;-30,-10,150",
+        "multiline": true
+      },
+      {
+        "name": "hold_time",
+        "label": "Удержание (сек)",
+        "type": "float",
+        "default": 3.0,
+        "min": 1.0,
+        "max": 30.0
+      }
+    ],
+    "custom": false
+  },
+  "reset_center": {
+    "name": "Возврат в центр",
+    "description": "Сброс камеры в исходное положение",
+    "params": [],
+    "custom": false
+  },
+  "scan_360": {
+    "name": "Круговое сканирование",
+    "description": "Полный поворот на 360° с паузами",
+    "params": [
+      {
+        "name": "step_angle",
+        "label": "Шаг (°)",
+        "type": "int",
+        "default": 15,
+        "min": 5,
+        "max": 45
+      },
+      {
+        "name": "pause_time",
+        "label": "Пауза (сек)",
+        "type": "float",
+        "default": 1.0,
+        "min": 0.5,
+        "max": 5.0
+      }
+    ],
+    "custom": false
+  }
+}

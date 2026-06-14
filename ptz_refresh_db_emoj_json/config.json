@@ -1,0 +1,10 @@
+{
+  "controls": {
+    "pan_step": 20,
+    "tilt_step": 20,
+    "zoom_step": 10
+  },
+  "camera": {
+    "default_camera": 0
+  }
+}
